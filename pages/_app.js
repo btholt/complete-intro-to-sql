@@ -1,5 +1,5 @@
 import Head from "next/head";
-import "@fortawesome/fontawesome-free/js/all.js";
+import "@fortawesome/fontawesome-free/css/all.css";
 
 import "highlight.js/styles/a11y-light.css";
 import "../styles/variables.css";

@@ -18,6 +18,7 @@
   --corner-active: var(--highlight);
   --corner-inactive: #f4f4f4;
   --icons: var(--highlight);
+  --footer-icons: var(--highlight);
 
   --emphasized-bg: #dce8ff;
   --emphasized-border: #aab6d2;
