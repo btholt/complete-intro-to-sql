@@ -19,6 +19,7 @@ jobs:
         with:
           target_branch: gh-pages
           build_dir: out
-          domain: sql.holt.courses
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Add custom domain
+        run: echo "sql.holt.courses" > out/CNAME
