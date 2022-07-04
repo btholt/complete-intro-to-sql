@@ -14,6 +14,7 @@ jobs:
         run: |
           npm install
           npm run export
+          echo "sql.holt.courses" > out/CNAME
       - name: Deploy site to gh-pages branch
         uses: crazy-max/ghaction-github-pages@v2
         with:
@@ -21,5 +22,3 @@ jobs:
           build_dir: out
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Add custom domain
-        run: echo "sql.holt.courses" > out/CNAME
