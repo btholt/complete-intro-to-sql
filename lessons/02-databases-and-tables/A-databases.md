@@ -37,16 +37,3 @@ CREATE DATABASE foodly;
 A database is a collection of similar tables of data. For our recipe app we will store all our tables in one database. There's a lot of schools of thought of when to shove everything into one database versus when to decompose it all into various different databases. I generally think in terms of clients: if my app is going to be querying for the data, then I'll try to keep it in an app-oriented database. If I have another client that is going to be storing client analytics for my team to digest later, I'd probably put that in a separate database. It's a bit vague of when you should, but think in terms of "what if I had to scale these independently" sorts of terms.
 
 Type `\c foodly` to connect to our database. We were previously connected to the `postgres` default database.
-
-## Create a table
-
-Let's create our first table, the `ingredients` table.
-
-```sql
-CREATE TABLE ingredients (
-  id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
-  title VARCHAR ( 255 ) UNIQUE NOT NULL
-);
-```
-
-This will create our first table for us to start using. We will get into data types in the next lesson but know that it has a unique ID and a unique title.

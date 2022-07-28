@@ -14,11 +14,11 @@ jobs:
         run: |
           npm install
           npm run export
-          echo "sql.holt.courses" > out/CNAME
       - name: Deploy site to gh-pages branch
         uses: crazy-max/ghaction-github-pages@v2
         with:
           target_branch: gh-pages
           build_dir: out
+          fqdn: sql.holt.courses
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
