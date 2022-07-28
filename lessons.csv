@@ -1,0 +1,10 @@
+order,sectionTitle,lessonTitle,slug,sectionIcon,filePath,description
+01A,The First Section,Introduction,the-first-section/intro,info-circle,/lessons/the-first-section/intro,The introduction to this course.
+01B,The First Section,Docker,the-first-section/docker,info-circle,/lessons/the-first-section/docker,""
+02A,Databases and Tables,Databases,databases-and-tables/databases,database,/lessons/databases-and-tables/databases,""
+02B,Databases and Tables,Tables,databases-and-tables/tables,database,/lessons/databases-and-tables/tables,""
+03A,Data,Inserts,data/inserts,table,/lessons/data/inserts,""
+03B,Data,Updates and Deletes,data/updates-and-deletes,table,/lessons/data/updates-and-deletes,""
+03C,Data,Selects,data/selects,table,/lessons/data/selects,""
+03D,Data,Like and Functions,data/like-and-functions,table,/lessons/data/like-and-functions,""
+03E,Data,Project,data/project,table,/lessons/data/project,""
