@@ -72,10 +72,25 @@ description: "The introduction to this course."
     - Safe inserts
     - Parameterization
     - SQL Injection
+  - JSONB
+    - Tags
+    - Querying JSON
+  - Triggers, Functions, and Procedures
+    - Function: get all available types or tags
+    - Procedure: log to table added ingredients
+    - Trigger: new ingredient added
 - A Movies Website
   - Expensive Queries
+    - EXPLAIN
   - Indexes
   - Full text search
+  - Subqueries
+  - Views
+    - Most popular actors
+    - Materialized views vs views
+  - Window functions / aggregation
+    - Average / sum revenue across several cuts of movies
+    - OVER / PARTITION BY
 
 [twitter]: https://twitter.com/holtbt
 [fem]: https://www.frontendmasters.com

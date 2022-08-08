@@ -31,6 +31,18 @@ We're going to go to the ingredients page first (we're doing recipes next.) Go t
 - We're using the `pg` module in Node.js for Postgres. It's by far the most popular. [See documentation here][pg].
 - Any time you delete something you can go back and rerun the [big INSERT query from the inserts lesson][inserts].
 
+## We need a window function
+
+Okay, I need you to add one little thing to your query to get this all to work correctly, but we're not that far in the lesson yet.
+
+Try this query in your CLI.
+
+```sql
+SELECT id, title, COUNT(*) OVER ()::INT AS total_count FROM ingredients;
+```
+
+The `COUNT(*) OVER ()::INT AS total_count` is going to return the total count of all rows in this query as an integer and return it as total_count. Please pass this total_count to the frontend so pagination will work. We'll go over this later, but please add that to your query so the pagination on the search results works.
+
 [project]: TODO
 [pg]: https://node-postgres.com/
 [inserts]: /lessons/data/inserts

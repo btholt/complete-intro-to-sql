@@ -41,7 +41,7 @@ INSERT INTO ingredients (
   ( 'carrot', 'carrot.jpg', 'vegetable' ),
   ( 'cauliflower', 'cauliflower.jpg', 'vegetable' ),
   ( 'cherry', 'cherry.jpg', 'fruit' ),
-  ( 'chicken', 'chicken.jpg', 'fruit' ),
+  ( 'chicken', 'chicken.jpg', 'meat' ),
   ( 'corn', 'corn.jpg', 'vegetable' ),
   ( 'cucumber', 'cucumber.jpg', 'vegetable' ),
   ( 'eggplant', 'eggplant.jpg', 'vegetable' ),
