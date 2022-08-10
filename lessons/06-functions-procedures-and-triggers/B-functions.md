@@ -53,7 +53,6 @@ BEGIN
     r.title
   HAVING
     COUNT(r.title) between low and high;
-
 END;
 $$;
 ```
@@ -75,7 +74,7 @@ Let's break down some features of it:
 - You do need to declare a return type, either in the function definiton like we did, or in the invocation
 - `$$` is called "dollar quotes". You can actually use them instead of `'` in your insertions if you're sick of writing `''` for your single quotes and `\\` for your backslashes. It's just really ugly. Here we use them because we have a long quote and it would be very annoying to try and escape everything
 - This language is called PL/pgSQL. It's a very SQL like language designed to be easy to write functions and procedures. PostgreSQL actually allows itself to be extended and you can use [JavaScript][js], [Python][py], and other languages to write these as well
-- Here we're just returning the result of a query. There's a myriad of more powerful things you can do with functions and fun sorts of aggregation. I'll leave that to you to explore.
+- Here we're just returning the result of a query. There's a myriad of more powerful things you can do with functions and fun sorts of aggregation. I'll leave that to you to explore. This is not a class on functions; it's a very deep topic
 
 A note from your potential future self or coworker: _do not go overboard_. This are powerful but they can also be weird to debug. Where do you store the code for these? How are you going to debug it when it has a bug in production? There are ways to handle these things but it's _different_ than just handling it in your server's code. Use with caution.
 
