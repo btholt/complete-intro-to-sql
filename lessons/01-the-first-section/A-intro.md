@@ -78,7 +78,7 @@ description: "The introduction to this course."
   - Triggers, Functions, and Procedures
     - Function: get all available types or tags
     - Procedure: log to table added ingredients
-    - Trigger: new ingredient added
+    - Trigger: log new ingredient added
 - A Movies Website
   - Expensive Queries
     - EXPLAIN
