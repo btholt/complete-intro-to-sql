@@ -7,7 +7,7 @@ FROM
   movies
 ORDER BY
   COALESCE(revenue, 0) DESC
-LIMIT 1;
+LIMIT 5;
 ```
 
 ## How much revenue did the movies Keanu Reeves act in make?
@@ -32,7 +32,7 @@ WHERE
   p.name = 'Keanu Reeves';
 ```
 
-## Which 5 actors were in the movies that had the most revenue?
+## Which 5 people were in the movies that had the most revenue?
 
 ```sql
 SELECT
@@ -59,11 +59,11 @@ ORDER BY
 LIMIT 5;
 ```
 
-## Which 10 movies have the most categories?
+## Which 10 movies have the most keywords?
 
 ```sql
 SELECT
-  m.name, count(c.id) AS count
+  m.name, COUNT(c.id) AS count
 FROM
   movies m
 
@@ -89,5 +89,21 @@ LIMIT 10;
 ## Which category is associated with the most movies
 
 ```sql
+SELECT
+  c.name, COUNT(mk.category_id) AS count
+FROM
+  movie_keywords mk
 
+INNER JOIN
+  categories c
+ON
+  c.id = mk.category_id
+
+GROUP BY
+  c.name, mk.category_id
+
+ORDER BY
+  count DESC
+
+LIMIT 5;
 ```
