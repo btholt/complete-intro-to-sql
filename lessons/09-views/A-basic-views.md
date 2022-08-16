@@ -9,7 +9,7 @@ CREATE VIEW
   english_category_names
 AS
 SELECT
-  category_id, name
+  category_id, name, language
 FROM
   category_names
 WHERE
@@ -30,7 +30,13 @@ A few things to note here:
 
 ## Inserting into views
 
-TODO
+Some pretty cool we can do here with _this_ view (but not all views) is we can actually insert into the view itself. Because it's simple enough that if we insert a category_id and name with the language it'll be smart enough to forward that on to the correct table.
+
+```sql
+INSERT INTO english_category_names (category_id, name, language) VALUES (2, 'Brian Holt biopic', 'it');
+```
+
+> Note that we inserted an Italian language even though it's an English table. It's going to enforce that only English works here.
 
 ## Views with joins
 
