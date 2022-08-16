@@ -43,6 +43,6 @@ SELECT id, title, COUNT(*) OVER ()::INT AS total_count FROM ingredients;
 
 The `COUNT(*) OVER ()::INT AS total_count` is going to return the total count of all rows in this query as an integer and return it as total_count. Please pass this total_count to the frontend so pagination will work. We'll go over this later, but please add that to your query so the pagination on the search results works.
 
-[project]: TODO
+[project]: https://github.com/btholt/sql-apps
 [pg]: https://node-postgres.com/
 [inserts]: /lessons/data/inserts

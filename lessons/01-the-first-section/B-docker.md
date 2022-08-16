@@ -21,7 +21,7 @@ We're going to use two containers:
 - [PostgreSQL 14][pg]
 - [btholt/omdb-postrgres][btholt]
 
-The first is the base, official image of PostgreSQL 14 (the latest stable version as of writing.) I'll be using `<TODO: VERSION USED>` but you can likely use anything that's 14.X. Normally they don't break things between version. If there's a new major stable version (e.g. 15.X, 16.X, etc.) I would not recommend taking the class using those. Things can break between major versions. Use 14.X for this course and then go see what's different after.
+The first is the base, official image of PostgreSQL 14 (the latest stable version as of writing.) I'll be using 14.3 but you can likely use anything that's 14.X. Normally they don't break things between version. If there's a new major stable version (e.g. 15.X, 16.X, etc.) I would not recommend taking the class using those. Things can break between major versions. Use 14.X for this course and then go see what's different after.
 
 The latter container is based on the same Postgres 14 container but preload it with a bunch of movie data from the [Open Movie Database][omdb]. This is a dump of that database for us to play around with. This is based on [this setup script by credativ][credativ]. If you ever break anything, just shut down your container and restart it.
 

@@ -1,5 +1,3 @@
-TODO: move to movie section
-
 A little bonus fun puzzle for you.
 
 You can join tables to themselves. Why would you ever want to do that?
