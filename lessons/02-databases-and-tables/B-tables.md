@@ -7,6 +7,8 @@ CREATE TABLE ingredients (
 );
 ```
 
+> INT, INT4 or INTEGER are the same thing. Feel free to use what suits you. Similarly DEC, FIXED, and DECIMAL are the same thing.
+
 This will create our first table for us to start using. We will get into data types in the next lesson but know that it has a unique ID and a unique title.
 
 To see the table you created, run `\d` in your psql instance to see it and the the sequence that you created. The sequence stores the `id` counter.
@@ -90,6 +92,11 @@ ADD COLUMN image VARCHAR ( 255 ),
 ADD COLUMN type VARCHAR ( 50 ) NOT NULL;
 ```
 
-This is how you add multiple records! Just add multiple "ADD COLUMNS". As you may have guessed, you can do multiple different types of operations if you need to in one atomic transaction.
+This is how you add multiple records! Just add multiple "ADD COLUMN"s. As you may have guessed, you can do multiple different types of operations if you need to in one atomic transaction.
+
+## Data types
+
+There are so many data types in PostgreSQL that we won't get close to covering them all. [Have a peek here from the PostgreSQL docs][types]
 
 [sheets]: https://www.npmjs.com/package/google-spreadsheet
+[types]: https://www.postgresql.org/docs/current/datatype.html

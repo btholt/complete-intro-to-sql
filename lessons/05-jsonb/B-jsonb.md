@@ -1,5 +1,6 @@
 ---
 description: ""
+title: "JSONB"
 ---
 
 Let's add a JSONB field to our recipes. We'll call it `meta` as in metadata but we could call it anything. And keep in mind this is just a normal JSON object. You can have arrays, nested objects, whatever.

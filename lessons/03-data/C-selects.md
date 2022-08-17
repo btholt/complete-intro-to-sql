@@ -71,3 +71,21 @@ FROM ingredients
 WHERE id <= 10
   OR id >= 20;
 ```
+
+## ORDER BY
+
+You frequently will care about the order these things come back in, how they're sorted. That's what ORDER BY is for.
+
+Let's say you wanted to order not by id or insertion order but by title.
+
+```sql
+SELECT * FROM ingredients ORDER BY title;
+```
+
+This will alphabetize your returned list. What if we wanted it in reverse order of IDs?
+
+```sql
+SELECT * FROM ingredients ORDER BY id DESC;
+```
+
+This will start at the largest number and count backwards. As you may have guessed, `ASC` is implied if you don't specify.

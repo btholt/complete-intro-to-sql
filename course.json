@@ -3,16 +3,16 @@
     "name": "Brian Holt",
     "company": "Stripe"
   },
-  "title": "Next.js Course Starter Kit",
-  "subtitle": "for Frontend Masters",
-  "frontendMastersLink": "https://frontendmasters.com/courses/complete-react-v6/",
+  "title": "Complete Intro to SQL",
+  "subtitle": "and PostgreSQL",
+  "frontendMastersLink": "https://frontendmasters.com/",
   "social": {
     "linkedin": "btholt",
     "github": "btholt",
     "twitter": "holtbt"
   },
-  "description": "A starter kit for making really amazing courses, optimized for Frontend Masters",
-  "keywords": ["your", "Google", "keywords", "here"],
+  "description": "Come learn the basics to querying SQL and managing PostgreSQL with industry expert Brian Holt",
+  "keywords": ["sql", "querying", "data", "Brian Holt", "node.js", "javascript"],
   "productionBaseUrl": "",
   "csvPath": "./out/lessons.csv"
 }

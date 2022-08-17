@@ -12,7 +12,7 @@ We're going to go to the ingredients page first (we're doing recipes next.) Go t
 
 > - Make sure your Postgres Docker database is running by running `docker ps` or looking at the Docker GUI
 > - Make sure that your database is exposing port 5432. You can see that in the `docker ps` output or in the GUI.
-> - Make sure you're connecting to the correct database. If you didn't create a new database, the data you created will be in the default `postgres` database. If you followed my instructions, the data will be in the `foodguru` database.
+> - Make sure you're connecting to the correct database. If you didn't create a new database, the data you created will be in the default `postgres` database. If you followed my instructions, the data will be in the `recipeguru` database.
 > - If your database is missing the data, go back to [the INSERTs lesson][inserts] and copy the long query there and rerun it in your database.
 
 ## Your project
@@ -31,7 +31,7 @@ We're going to go to the ingredients page first (we're doing recipes next.) Go t
 - We're using the `pg` module in Node.js for Postgres. It's by far the most popular. [See documentation here][pg].
 - Any time you delete something you can go back and rerun the [big INSERT query from the inserts lesson][inserts].
 
-## We need a window function
+## We need an aggregation function
 
 Okay, I need you to add one little thing to your query to get this all to work correctly, but we're not that far in the lesson yet.
 
