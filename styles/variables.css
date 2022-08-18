@@ -1,11 +1,11 @@
 :root {
-  --primary: #dfa067;
-  --secondary: #93aca7;
-  --highlight: #224159;
+  --primary: #ff6838;
+  --secondary: #005c83;
+  --highlight: #00263f;
 
   --text-header: var(--primary);
   --text-main-headers: var(--highlight);
-  --text-links: #007bff;
+  --text-links: var(--primary);
   --text-footer: #333;
 
   --bg-main: white;
