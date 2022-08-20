@@ -32,7 +32,7 @@ Okay let's create our own. Run this command in your database.
 CREATE DATABASE recipeguru;
 ```
 
-> Note if you kill your container, it will kill all the data with it and you will need to recreate everything if you do that. I do provide [this complete SQL file][sql-file] that has _everything_ for the Foodguru database but it's for the whole lesson so if you do need to restart it may be easier to go back and do the creation by hand.
+> Note if you kill your container, it will kill all the data with it and you will need to recreate everything if you do that. I do provide [this complete SQL file][sql-file] that has _everything_ for the recipeguru database but it's for the whole lesson so if you do need to restart it may be easier to go back and do the creation by hand.
 
 A database is a collection of similar tables of data. For our recipe app we will store all our tables in one database. There's a lot of schools of thought of when to shove everything into one database versus when to decompose it all into various different databases. I generally think in terms of clients: if my app is going to be querying for the data, then I'll try to keep it in an app-oriented database. If I have another client that is going to be storing client analytics for my team to digest later, I'd probably put that in a separate database. It's a bit vague of when you should, but think in terms of "what if I had to scale these independently" sorts of terms.
 

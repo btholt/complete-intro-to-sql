@@ -2,7 +2,7 @@
 description: ""
 ---
 
-From the previous lesson we have an ingredients table in our foodly database. It's basically an empty spreadsheet at this point. It's a repository of data with nothing in it. Let's add our first bit of data into it.
+From the previous lesson we have an ingredients table in our recipeguru database. It's basically an empty spreadsheet at this point. It's a repository of data with nothing in it. Let's add our first bit of data into it.
 
 ```sql
 INSERT INTO ingredients (

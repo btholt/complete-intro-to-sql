@@ -23,6 +23,8 @@ For the second page, you will likely need to query the database twice. That's ju
 
 [Here's a big SQL query which a bunch of recipes.][recipe] This will tear down all your tables and recreate them! This is helpful if you need to restart but be aware if you've added things this will delete them.
 
+Again, you will only be editing recipes/api.js. You _can_ edit other things if you want to but it shouldn't be necessary.
+
 Alright, good luck! Tweet me your results!
 
 [recipe]: /recipes.sql
