@@ -11,7 +11,7 @@ I went ahead wrapped the above into a public container and [put it on Docker Hub
 Let's run it. Run the following in your CLI.
 
 ```bash
-docker run -e POSTGRES_PASSWORD=lol --name=omdb -d -p 5432:5432 --rm btholt/omdb-postgres
+docker run -e POSTGRES_PASSWORD=lol --name=sql -d -p 5432:5432 --rm btholt/complete-intro-to-sql
 ```
 
 > You need to stop the recipe container for the above command to work since both will try to bind to port 5432. If you want both to run, you can do `5433:5432` instead of `5432:5432` to expose port 5433 on your local machine so there won't be a conflict.
@@ -19,7 +19,7 @@ docker run -e POSTGRES_PASSWORD=lol --name=omdb -d -p 5432:5432 --rm btholt/omdb
 Okay, now to connect to that container in psql, do:
 
 ```bash
-docker exec -u postgres -it omdb psql omdb
+docker exec -u postgres -it sql psql omdb
 ```
 
 > The last omdb connects you directly to the omdb database instead of having to run `\c omdb` when you first connect
@@ -64,5 +64,5 @@ Before we start learning some more concepts, let's have some fun doing some quer
 
 [omdb]: https://www.omdb.org
 [gh-omdb]: https://github.com/credativ/omdb-postgresql
-[docker]: https://hub.docker.com/r/btholt/omdb-postgres
-[gh-docker]: https://github.com/btholt/omdb-postgres-container/blob/main/Dockerfile
+[docker]: https://hub.docker.com/r/btholt/complete-intro-to-sql
+[gh-docker]: https://github.com/btholt/complete-intro-to-sql-container/blob/main/Dockerfile

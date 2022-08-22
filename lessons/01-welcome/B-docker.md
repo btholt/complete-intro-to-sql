@@ -19,11 +19,11 @@ The amount of CLI usage should be fairly minimal and you should be able to just 
 We're going to use two containers:
 
 - [PostgreSQL 14][pg]
-- [btholt/omdb-postrgres][btholt]
+- [btholt/complete-intro-to-sql][btholt]
 
 The first is the base, official image of PostgreSQL 14 (the latest stable version as of writing.) I'll be using 14.3 but you can likely use anything that's 14.X. Normally they don't break things between version. If there's a new major stable version (e.g. 15.X, 16.X, etc.) I would not recommend taking the class using those. Things can break between major versions. Use 14.X for this course and then go see what's different after.
 
-The latter container is based on the same Postgres 14 container but preload it with a bunch of movie data from the [Open Movie Database][omdb]. This is a dump of that database for us to play around with. This is based on [this setup script by credativ][credativ]. If you ever break anything, just shut down your container and restart it.
+The latter container is based on the same Postgres 14 container but preload it with a bunch of movie data from the [Open Movie Database][omdb] as well as the complete RecipeGuru database. This is a dump of that database for us to play around with. This is based on [this setup script by credativ][credativ]. If you ever break anything, just shut down your container and restart it.
 
 ## Get Running
 
@@ -33,7 +33,7 @@ Run the following to get yourself prepped for the course (optionally, you can le
 
 ```bash
 docker pull postgres:14
-docker pull btholt/omdb-postgres:14
+docker pull btholt/complete-intro-to-sql:14
 ```
 
 To make sure you're working, run the following:
@@ -68,7 +68,7 @@ Now you should be connected to Postgres and ready to run queries on a fresh Posg
 [fem]: https://frontendmasters.com/courses/complete-intro-containers/
 [docker]: https://www.docker.com/products/docker-desktop/
 [linux]: https://frontendmasters.com/courses/linux-command-line/
-[btholt]: https://hub.docker.com/r/btholt/omdb-postgres
+[btholt]: https://hub.docker.com/r/btholt/complete-intro-to-sql
 [pg]: https://hub.docker.com/_/postgres/
 [omdb]: https://www.omdbapi.com/
 [credativ]: https://github.com/credativ/omdb-postgresql
