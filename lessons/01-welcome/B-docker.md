@@ -63,7 +63,7 @@ docker run -e POSTGRES_PASSWORD=lol --name=pg --rm -d -p 5432:5432 postgres:14
 docker exec -u postgres -it pg psql
 ```
 
-Now you should be connected to Postgres and ready to run queries on a fresh Posgres instance!
+Now you should be connected to Postgres and ready to run queries on a fresh Postgres instance!
 
 [fem]: https://frontendmasters.com/courses/complete-intro-containers/
 [docker]: https://www.docker.com/products/docker-desktop/

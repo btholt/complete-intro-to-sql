@@ -1,3 +1,5 @@
+> Back to movies. `\c omdb` to reconnect to the movies db.
+
 Let's chat a moment about window functions. We saw one briefly in our Node.js project where we needed it for the count of the whole table.
 
 What if we wanted aggregate information about part of our rows. Basically a GROUP BY for an individual row.
