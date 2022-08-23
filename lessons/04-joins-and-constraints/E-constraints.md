@@ -8,6 +8,8 @@ A constraint is just a constraint you put around a column. For example, NOT NULL
 
 UNIQUE is another constraint that dictates that this column must be unqiue amongst all other columns. Ever wonder how an app can tell you so quickly if an email or a user name is taken so quickly? They likely use a UNIQUE constraint on those two columns. They should. PRIMARY is another such constraint.
 
+We also added a constraint on recipe_ingredients that every row must have a unique combination of recipe_id and ingredient_id. We could have added an additional primary, incrementing, unique ID but what would we use that for? To me at this moment it doesn't serve a purpose so we can just use the other two as a unique key. This is common for these sorts of many-to-many connecting tables.
+
 Foreign keys are a type of constraint as well. They enforce consistency amongst tables.
 
 ## CHECK

@@ -9,13 +9,15 @@ This is a bit different because it's a many-to-many relationship. A recipe has m
 
 ```sql
 CREATE TABLE recipe_ingredients (
-  id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
   recipe_id INTEGER REFERENCES recipes(recipe_id) ON DELETE NO ACTION,
-  ingredient_id INTEGER REFERENCES ingredients(id) ON DELETE NO ACTION
+  ingredient_id INTEGER REFERENCES ingredients(id) ON DELETE NO ACTION,
+  CONSTRAINT recipe_ingredients_pk PRIMARY KEY (recipe_id, ingredient_id)
 );
 ```
 
 We set this to error because we should clear out connections before we let developers delete recipes or ingredients. We don't want to cascade deletes because that could delete recipes and ingredients unintentionally and we don't want to set to null because then we'd have a bunch of half-null connections left over.
+
+We're going over constraints in the next chapter but we're basically saying "the combination of recipe_id and ingredient_id must be unique" and we're setting that as the primary key instead of an incrementing ID.
 
 This table will describe the many-to-many relationship with two foreign keys between ingredients and recipes. Now we can insert records into here that describe how an ingredient belongs to a recipe.
 
@@ -38,7 +40,6 @@ So now we have two recipes that have ingredients, cookies and empanadas. Since w
 
 ```sql
 SELECT
-  ri.id AS connection_id,
   i.title AS ingredient_title,
   i.image AS ingredient_image,
   i.type AS ingredient_type

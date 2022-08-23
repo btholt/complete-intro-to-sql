@@ -20,9 +20,9 @@ CREATE TABLE recipes_photos (
   recipe_id INTEGER REFERENCES recipes(recipe_id) ON DELETE CASCADE
 );
 CREATE TABLE recipe_ingredients (
-  id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
   recipe_id INTEGER REFERENCES recipes(recipe_id) ON DELETE NO ACTION,
-  ingredient_id INTEGER REFERENCES ingredients(id) ON DELETE NO ACTION
+  ingredient_id INTEGER REFERENCES ingredients(id) ON DELETE NO ACTION,
+  CONSTRAINT recipe_ingredients_pk PRIMARY KEY (recipe_id, ingredient_id)
 );
 
 INSERT INTO

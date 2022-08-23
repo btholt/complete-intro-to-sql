@@ -8,7 +8,7 @@ Let's next hop into SELECT, or how to read data from a database. We've already s
 SELECT * FROM ingredients;
 ```
 
-The _ there represents all available columns. Frequently, for a variety of reasons, we do not want to select everything. In general, I would recommend only using _ where your intent is truly "I want _anything this database could ever store for these records_". Frequently that is not the case. Frequently it is "I need the name, address and email for this email, but not their social security or credit card number". This is positive because it means smaller transfer loads, that your system only processes data it needs and not the rest, and it shows intention in your code.
+The \* there represents all available columns. Frequently, for a variety of reasons, we do not want to select everything. In general, I would recommend only using \* where your intent is truly "I want _anything this database could ever store for these records_". Frequently that is not the case. Frequently it is "I need the name, address and email for this email, but not their social security or credit card number". This is positive because it means smaller transfer loads, that your system only processes data it needs and not the rest, and it shows intention in your code. Honestly the biggest benefit is the latter: to show intentions in your code.
 
 So in our case we could put
 
@@ -25,8 +25,7 @@ Okay, now what if the user only wants five records?
 ```sql
 SELECT id, title, image
 FROM ingredients
-LIMIT 5
-OFFSET 5;
+LIMIT 5;
 ```
 
 This will limit your return to only five records, the first five it finds. You frequently will need to do this as well (as in almost always) since a database can contain _millions_ if not _billions_ of records.

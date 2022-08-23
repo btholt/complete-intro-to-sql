@@ -9,7 +9,7 @@ CREATE TABLE ingredients (
 
 > INT, INT4 or INTEGER are the same thing. Feel free to use what suits you. Similarly DEC, FIXED, and DECIMAL are the same thing.
 
-This will create our first table for us to start using. We will get into data types in the next lesson but know that it has a unique ID and a unique title.
+This will create our first table for us to start using. We will get into data types during the course but just know now that a VARCHAR is a string of max length 255 characters and an INTEGER is, well, an integer.
 
 To see the table you created, run `\d` in your psql instance to see it and the the sequence that you created. The sequence stores the `id` counter.
 

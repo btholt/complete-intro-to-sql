@@ -258,6 +258,10 @@ header .cta-btn {
   line-height: 180%;
 }
 
+.lesson li li {
+  margin-left: 25px;
+}
+
 .lesson-links {
   font-size: 18px;
   padding: 15px 0;

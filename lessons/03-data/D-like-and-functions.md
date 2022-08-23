@@ -15,7 +15,7 @@ This is a very limited fuzzy matching of text. This is not doing things like dro
 Okay, great, now what if a user searchs for "fruit"? We'd expect that work, right?
 
 ```sql
-SELECT * FROM ingredients WHERE concat(title, type) LIKE '%fruit%';
+SELECT * FROM ingredients WHERE CONCAT(title, type) LIKE '%fruit%';
 ```
 
 `concat()` is a function that will take two strings and combine them together. We can concat our two title and type columns and then used LIKE on the results on that combined string.
@@ -25,15 +25,15 @@ SELECT * FROM ingredients WHERE concat(title, type) LIKE '%fruit%';
 Okay, but what if we have capitalization problem? We can use lower, both on the columns and on the values.
 
 ```sql
-SELECT * FROM ingredients WHERE lower(concat(title, type)) LIKE lower('%FrUiT%');
+SELECT * FROM ingredients WHERE LOWER(CONCAT(title, type)) LIKE LOWER('%FrUiT%');
 ```
 
-`lower()` take a string and make it lowercase.
+`LOWER()` take a string and make it lowercase.
 
 Fortunately, there's an even easier way to do this with less function evocation.
 
 ```sql
-SELECT * FROM ingredients WHERE concat(title, type) ILIKE '%FrUiT%';
+SELECT * FROM ingredients WHERE CONCAT(title, type) ILIKE '%FrUiT%';
 ```
 
 `ILIKE` does the same thing, just with case insensitivity. Mostly I just wanted to show you lower!

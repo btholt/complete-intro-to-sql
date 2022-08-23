@@ -45,8 +45,6 @@ This course works and has been tested on both macOS and Windows 10/11. It also w
 
 I write these courses and take care to not make mistakes. However when teaching many hours of material, mistakes are inevitable, both here in the grammar and in the course with the material. However I (and the wonderful team at Frontend Masters) are constantly correcting the mistakes so that those of you that come later get the best product possible. If you find a mistake we'd love to fix it. The best way to do this is to [open a pull request or file an issue on the GitHub repo][issues]. While I'm always happy to chat and give advice on social media, I can't be tech support for everyone. And if you file it on GitHub, those who come later can Google the same answer you got.
 
-We'll talk about GitHub at the end of this class if that's unfamiliar to you.
-
 ## Who am I
 
 My name is Brian Holt and I am a product manager at Stripe. I work on all sorts of developer tools like the Stripe VS Code extension, the Stripe CLI, the Stripe SDKs, and other tools developers use to write code for Stripe. Before that I worked on Azure and VS Code at Microsoft as a PM and before that I was JavaScript (both frontend and Node.js) developer for a decade at companies like LinkedIn, Netflix, Reddit, and some other startups. I've written _a lot_ of code and written a lot of queries.

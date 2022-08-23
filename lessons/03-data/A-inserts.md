@@ -18,11 +18,13 @@ Big key here which will throw JS developers for a loop: you _must_ use single qu
 
 ```sql
 INSERT INTO "ingredients" (
- "title", "image", "type"
+ "title", "image", "type" -- Notice the " here
 ) VALUES (
-  'broccoli', 'broccoli.jpg', 'vegetable'
+  'broccoli', 'broccoli.jpg', 'vegetable' -- and the ' here
 );
 ```
+
+> Use `--` for comments
 
 The above query works because the double quotes are around identifiers like the table name and the column names. The single quotes are around the literal values. The double quotes above are optional. The single quotes are not.
 
