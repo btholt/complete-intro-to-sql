@@ -33,7 +33,7 @@ Run the following to get yourself prepped for the course (optionally, you can le
 
 ```bash
 docker pull postgres:14
-docker pull btholt/complete-intro-to-sql:14
+docker pull btholt/complete-intro-to-sql
 ```
 
 To make sure you're working, run the following:
