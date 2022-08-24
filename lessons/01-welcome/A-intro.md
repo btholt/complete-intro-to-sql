@@ -3,7 +3,7 @@ title: "Introduction"
 description: "Brian welcomes you to the course and sets expectations of what you will learn in the Complete Intro to SQL and PostgreSQL"
 ---
 
-Hello! And welcome to the seventh edition of the Complete Intro to SQL and PostgreSQL as taught by [Brian Holt][twitter].
+Hello! And welcome to the Complete Intro to SQL and PostgreSQL as taught by [Brian Holt][twitter].
 
 ![course logo](./images/course-icon.png)
 

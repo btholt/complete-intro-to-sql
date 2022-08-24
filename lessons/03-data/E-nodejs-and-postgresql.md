@@ -64,7 +64,15 @@ const { rows } = await pool.query(`SELECT * FROM ingredients WHERE id=${id}`);
 
 SQL injection. You're just raw passing in user data to a query and a user could fathomably put _anything_ in that id API request. What happens if a user made id equal to `1; DROP TABLE users; --`?
 
+> Do not run the next query. Well, it wouldn't matter since we don't have a users table but still, it's meant to be a demonstration of what could happen.
+
+```sql
+SELECT * FROM ingredients WHERE id=1; DROP TABLE users; --
+```
+
 Oh no 😱
+
+The first `1;` ends the first query. The `DROP TABLE users;` does whatever malicious thing the hacker wants to do. They can delete info like this one does, or they can dump info that you don't want them to. The `--` says "everything after this is a comment" so it comments out the rest of your SQL if anything came after it.
 
 This is SQL injection and a very real issue with SQL in apps. It's why Wordpress apps are always under attack because they use MySQL behind the scenes. If you can find somewhere you can inject SQL you can get a lot of info out of an app.
 
