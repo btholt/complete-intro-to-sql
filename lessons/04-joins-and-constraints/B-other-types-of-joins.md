@@ -73,4 +73,4 @@ SELECT r.title, r.body, rp.url
     recipes r;
 ```
 
-Keep in mind that 3 rows in each table yielded 9 rows. In our case, it yield 78 rows! It's not typically the most useful kind of join buut good to know it's there.
+Keep in mind that 3 rows in each table yielded 9 rows. In our case, it yield 78 rows! It's not typically the most useful kind of join but good to know it's there.
