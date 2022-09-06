@@ -1,4 +1,4 @@
-<p align="center"><a href="https://frontendmasters.com/"><img alt="code logo" title="code" src="./public/images/course-icon.png" /></a></p>
+<p align="center"><a href="https://frontendmasters.com/workshops/complete-intro-sql/"><img alt="code logo" title="code" src="./public/images/course-icon.png" /></a></p>
 
 [![Frontend Masters](https://static.frontendmasters.com/assets/brand/logos/full.png)][fem]
 
@@ -12,7 +12,7 @@ The **code** is this repo is licensed under the Apache 2.0 license.
 
 The **content** is licensed under CC-BY-NC-4.0.
 
-[fem]: https://frontendmasters.com/workshops/web-development-v3/
+[fem]: https://frontendmasters.com/workshops/complete-intro-sql/
 
 ## Course Icon License
 
