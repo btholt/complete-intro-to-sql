@@ -79,7 +79,7 @@ VALUES
 Okay, now let's select all the photos for shakshuka. Shakshuka is ID 4 (if you followed my instructions, feel free to drop tables and recreate them if you need to.)
 
 ```sql
-SELECT title, body FROM recipes WHERE id = 4;
+SELECT title, body FROM recipes WHERE recipe_id = 4;
 SELECT url FROM recipes_photos WHERE recipe_id = 4;
 ```
 

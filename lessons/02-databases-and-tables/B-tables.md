@@ -89,10 +89,12 @@ There's a lot of ways to alter a table. You can make it UNIQUE like we did or NO
 ```sql
 ALTER TABLE ingredients
 ADD COLUMN image VARCHAR ( 255 ),
-ADD COLUMN type VARCHAR ( 50 ) NOT NULL;
+ADD COLUMN type VARCHAR ( 50 ) NOT NULL DEFAULT 'vegetable';
 ```
 
 This is how you add multiple records! Just add multiple "ADD COLUMN"s. As you may have guessed, you can do multiple different types of operations if you need to in one atomic transaction.
+
+> Specifying a DEFAULT when using a NOT NULL constraint will prevent errors if the column has existing null values.
 
 ## Data types
 
