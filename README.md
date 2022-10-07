@@ -8,7 +8,7 @@
 
 ## License
 
-The **code** is this repo is licensed under the Apache 2.0 license.
+The **code** in this repo is licensed under the Apache 2.0 license.
 
 The **content** is licensed under CC-BY-NC-4.0.
 
