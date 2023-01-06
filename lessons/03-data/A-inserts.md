@@ -81,7 +81,7 @@ INSERT INTO ingredients (
 ON CONFLICT (title) DO UPDATE SET image = excluded.image;
 ```
 
-This is what many of us would call an "upsert". Insert if that title doesn't exist, update if it doesn't. If you try to run that query (or the previous one) without the ON CONFLICT statement, it will fail since we asserted that title is a UNIQUE field; there can only be one of tha exact field in the database.
+This is what many of us would call an "upsert". Insert if that title doesn't exist, update if it does. If you try to run that query (or the previous one) without the ON CONFLICT statement, it will fail since we asserted that title is a UNIQUE field; there can only be one of that exact field in the database.
 
 The type won't be updated because we didn't choose to handle that.
 
