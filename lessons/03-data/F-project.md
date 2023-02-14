@@ -21,8 +21,8 @@ We're going to go to the ingredients page first (we're doing recipes next.) Go t
 
 ## Your project
 
-1. Make sure your database is connecting correctly with the credential you're supplying
-1. Make the various ingredient carousels work. This will involve making selecting the right type.
+1. Make sure your database is connecting correctly with the credential you're supplying.
+1. Make the various ingredient carousels work. This will involve selecting the right type.
 1. Make the full text search work.
 1. Make the pagination work for search. You can use OFFSET here. Doing it with IDs is more correct, but a stretch goal here.
 
