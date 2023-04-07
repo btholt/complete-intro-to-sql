@@ -28,3 +28,5 @@ B-trees are compact, fairly simple data structures that are suited to general in
 [This page from the docs about index types][indexes] is helpful to glance at.
 
 [indexes]: https://www.postgresql.org/docs/current/indexes-types.html
+[fem]: https://frontendmasters.com/courses/computer-science-v2/
+[btree]: https://en.wikipedia.org/wiki/B-tree
