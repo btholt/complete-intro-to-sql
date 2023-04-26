@@ -12,13 +12,13 @@ This is a very limited fuzzy matching of text. This is not doing things like dro
 
 ## Built in functions
 
-Okay, great, now what if a user searchs for "fruit"? We'd expect that work, right?
+Okay, great, now what if a user searchs for "fruit"? We'd expect that to work, right?
 
 ```sql
 SELECT * FROM ingredients WHERE CONCAT(title, type) LIKE '%fruit%';
 ```
 
-`concat()` is a function that will take two strings and combine them together. We can concat our two title and type columns and then used LIKE on the results on that combined string.
+`concat()` is a function that will take two strings and combine them together. We can concat our two title and type columns and then use LIKE on the results on that combined string.
 
 > The result of the cherry row would be `cherryfruit` which means it'd match weird strings like `rryfru`. We'll talk later about more complicated string matching but this will do for now.
 
