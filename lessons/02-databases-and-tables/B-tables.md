@@ -11,11 +11,11 @@ CREATE TABLE ingredients (
 
 This will create our first table for us to start using. We will get into data types during the course but just know now that a VARCHAR is a string of max length 255 characters and an INTEGER is, well, an integer.
 
-To see the table you created, run `\d` in your psql instance to see it and the the sequence that you created. The sequence stores the `id` counter.
+To see the table you created, run `\d` in your psql instance to see it and the sequence that you created. The sequence stores the `id` counter.
 
 We now have a table. A table is the actual repository of data. Think of a database like a folder and a table like a spreadsheet. You can have many spreadsheets in a folder. Same with tables.
 
-We now have a table, ingredients. Our table has two fields in it, an incrementing ID and a string that is the the title of the ingredients. You can think of fields like columns in a spreadsheet.
+We now have a table, ingredients. Our table has two fields in it, an incrementing ID and a string that is the title of the ingredients. You can think of fields like columns in a spreadsheet.
 
 A table contains records. A record can be thought of as a row in a spreadsheet. Every time we insert a new record into a table, we're adding another row to our spreadsheet.
 
