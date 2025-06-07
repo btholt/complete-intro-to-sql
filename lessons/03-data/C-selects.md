@@ -53,7 +53,7 @@ FROM ingredients
 WHERE type = 'fruit';
 ```
 
-This will give us all the fruits we had. What if we wanted to only select vegetables where the the IDs are less 20?
+This will give us all the fruits we had. What if we wanted to only select vegetables where the IDs are less 20?
 
 ```sql
 SELECT *
