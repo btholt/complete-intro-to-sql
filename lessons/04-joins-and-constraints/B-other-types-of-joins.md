@@ -41,7 +41,7 @@ SELECT r.title, r.body, rp.url
 
 This is a combination of LEFT and RIGHT join, pluse the INNER.
 
-[![diagram of SQL joins](../images/SQL_Joins.png)](https://commons.wikimedia.org/wiki/File:SQL_Joins.svg)
+[![diagram of SQL joins](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/SQL_Joins.svg/1920px-SQL_Joins.svg.png)](https://commons.wikimedia.org/wiki/File:SQL_Joins.svg)
 
 As you can see here in this diagram, you can select for any overlap of the two Venn diagrams. They're all "correct"; it just depends what you mean to select. There's no one correct way. That's like asking "is + or - correct?" Well, it depends on what you're trying to do!
 
