@@ -30,4 +30,6 @@ LIMIT 50;
 - Then we use WHERE to limit c1 to de and to check to see where the `en` is null (which is left in because of the LEFT JOIN)
 - If you set `IS NULL` to `IS NOT NULL` you'll see German and English translations in the same line.
 
+> **Note:** The join conditions (`ON` clause) execute first, matching each row to its corresponding English translation if one exists. The `AND c2.language = 'en'` in the `ON` clause is crucial; without it, every row would match itself (de-de, en-en, etc.), and the final `WHERE c2.language IS NULL` would return nothing. With it, we get pairs like `de-en` (when English exists), `de-null` (when it doesn't), `es-en`, `es-null`, etc. Then the `WHERE` clause filters to show only rows where `c1` is German (`de`) and `c2` is `NULL` (no English translation found).
+
 This is a bit of an advance use case and to be quite clear, I took a while to tinker with this to get it to be just what I wanted. Most people don't get it right the first time, just like programming in general.
