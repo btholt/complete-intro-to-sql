@@ -20,6 +20,10 @@ ul {
   font-weight: normal;
 }
 
+pre {
+  overflow-x: auto;
+}
+
 img {
   max-width: 100%;
   height: auto;
